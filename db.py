@@ -16,8 +16,8 @@ from vk_api.utils import get_random_id
 def insertcash(uid, cash):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -36,8 +36,8 @@ def insertcash(uid, cash):
 def insertnote(uid, text):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
 
@@ -57,8 +57,8 @@ def insertnote(uid, text):
 def deletecash(uid):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
 
@@ -75,8 +75,8 @@ def deletecash(uid):
 def checkcash(uid):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -95,8 +95,8 @@ def selectusernote(uid):
     #uid = 127949564
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -121,8 +121,8 @@ def selectuserfullnote(num, uid):
     #uid = 127949564
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -145,8 +145,8 @@ def selectuserfullnote(num, uid):
 def editnotes(uid, num, ednote):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)
@@ -159,8 +159,8 @@ def editnotes(uid, num, ednote):
 def deletenotes(uid, num):
     conn = pymysql.connect(
     host = 'localhost',
-    user = 'tgbot',
-    password = 'thxleha',
+    user = 'user',
+    password = 'pass',
     db = 'notesbot',
     )
     cursor = conn.cursor(pymysql.cursors.DictCursor)

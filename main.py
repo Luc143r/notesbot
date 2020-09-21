@@ -14,11 +14,11 @@ from function import *
 #Group: https://vk.com/stupiddevelopergroup
 
 def main():
-    vk_session = vk_api.VkApi(token = 'd9ec11dce7ebaa63b6ce9fcc01ffab7a11e7bcedd7e5797c2464f82959b947a4a724fb4097fb46a764c69')
+    vk_session = vk_api.VkApi(token = 'token')
     print('Bot started!')
 
     vk = vk_session.get_api()
-    group_id = 179311430
+    group_id = int(id)
 
     longpoll = VkBotLongPoll(vk_session, str(group_id))
     upload = vk_api.VkUpload(vk_session)
